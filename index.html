@@ -9,955 +9,958 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+/* ? main START */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html{
+    width: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* ! main END */
+
+/* ? header START */
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     
-        <style>
-            /* ? main START */
-            
-            *{
-                padding: 0;
-                margin: 0;
-                list-style: none;
-                text-decoration: none;
-                font-family: sans-serif;
-            }
-            
-            html{
-            
-                font-size: 62.5%;
-            }
-            
-            
-            body{
-                width: 100%;
-                height: auto;
-                background-size: cover;
-                background: #f1f1f1;
-                overflow-x: hidden;
-            }
-            
-            html{
-                font-size: 62.5%;
-            }
-            
-            /* ! main END */
-            
-            /* ? header START */
-            
-            .header{
-                width: 100%;
-                height: 5rem;
-                display: flex;
-                align-items: center;
-                position: fixed;
-                top: 0;
-                z-index: 999;
-                
-            }
-            
-            .logo{
-                font-size: 2.3rem;
-                color: #8e00b9;
-                font-weight: bolder;
-                margin-left: 1rem;
-            }
-            
-            
-            .ana-sayfa-container{
-                width: 100%;
-                height: 100vh;
-            }
-            
-            .ana-sayfa-contact1{
-                background: url(images/bacgkround.jpg) no-repeat;
-                background-size: cover;
-                object-fit: cover;
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-            }
-            
-            .header-ul{
-                width: auto;
-                display: flex;
-                justify-content: center;
-                position: absolute;
-                display: flex;
-                gap: 7rem;
-                right: 5rem;
-            }
-            
-            
-            
-            .header-ul a{
-                font-size: 1.5rem;
-                color: rgb(197, 72, 255);
-                transition: .7s ease all;
-                display: flex;
-                gap: 7rem;
-                font-weight: bold;
-                
-            }
-            
-            .header-ul a::selection{
-                background: #d50ff0;
-                color: white;
-            }
-            
-            .header-ul li{
-                margin: 0rem;
-            }
-            
-            
-            .header-ul a:hover{
-                border-bottom: solid .1rem rgb(197, 72, 255);
-                width:max-content;
-                border-radius: 1rem;
-                padding: 0 1.5rem;
-                background: black;
-                box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.12), 0 22.3px 17.9px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.04);
-                overflow: hidden;
-                color: #fff;
-                transform: scale(1.2);
-            }
-            
-            /* ! header END */
-            
-            
-            
-            
-            
-            /* ? anasayfa contact2 START */
-            
-            .social-media-con{   /*é*/
-                margin-top: 6rem;
-                width: 100%;
-                height: 50rem;
-                position: absolute;
-                top: 5rem;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                grid-template-columns: 40% 40%;
-                grid-gap: 10%;
-                justify-content: center;
-            }
-            
-            
-            .social-media-con-wrapper{
-                display: flex;
-                justify-content: center;
-            }
-            
-            /* ? social-media-con START */
-            .social-media-box{
-                background: rgba(255, 255, 255, 0.87);
-                width: 40rem;
-                height: 40rem;
-                border-radius: .5rem;
-                display: flex;
-                justify-content: center;
-                position: relative;
-                transition: 1s ease all;
-            
-                animation: s-media-box-animation 1s infinite;
-            }
-            
-            @keyframes s-media-box-animation {
-                0%{box-shadow:0 0 .5rem white;}
-                100%{box-shadow:0 0 .5rem #adacac;}
-            }
-            
-            .social-media-box:hover{
-                background: rgba(255, 255, 255, 0.596);
-                box-shadow: 0 .2rem .5rem gray;
-            }
-            
-            .social-media-box-text{ 
-                font-size: 2.5rem;
-                position: absolute;
-                top: 19rem;
-                color: #555555;
-            }
-            
-            .social-media-box-text::selection{
-                background: #880499;
-                color: white;
-            }
-            
-            .social-media-box-btn-con{
-                width: 100%;
-                height: 2rem;
-                position: absolute;
-                bottom: 3rem;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .social-media-box-btn{
-                width: 40%;
-                height: 4rem;
-                position: absolute; 
-                bottom: 0;
-                border-radius: .5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.9rem;
-                font-weight: bold;
-                transition: 1s ease all;
-            }
-            
-            
-            #instagram-btn{
-                background: #d50ff0;
-                color: whitesmoke;
-            }
-            
-            #instagram-btn::selection{
-                background: #b906d1;
-                color: white;
-            }
-            
-            #instagram-btn:hover{
-                background: #880499;
-                color: #ffffffab;
-            }
-            
-            #youtube-btn{
-                background: red;
-                color: whitesmoke;
-            }
-            
-            #youtube-btn:hover{
-                background: #aa0000;
-                color: #ffffffab;
-            }
-            
-            #youtube-btn::selection{
-                background: rgb(252, 50, 50);
-                color: white;
-            }
-            
-            .instagram-ico{
-                font-size: 14rem;
-                margin-top: 2rem;
-                color: #d50ff0;
-            }
-            
-            .youtube-ico{
-                font-size: 14rem;
-                margin-top: 2rem;
-                color: #ff0000;
-            }
-            
-            /* ? social-media-con END */
-            
-            /* ! anasayfa contact2 END */
-            
-            
-            
-            /* ? hakkımızda container START */
-            
-            .hakkimizda-con{
-                width: 100%;
-                height: 150vh;
-                background: #02002E;
-                position: relative;
-            }
-            
-            .hakkimizda-contact{
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .hakkimizda-box{
-                background: #55066d1e;
-                border: solid .2rem #8e00b9;
-                width: 80%;
-                height: 6rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            
-                animation: hakkimizda-box-animation 1s infinite;
-            }
-            
-            @keyframes hakkimizda-box-animation {
-                0%{box-shadow: 0 0 .7rem #b906d1;}
-            }
-            
-            .hakkimizda-title{
-                font-size: 3rem;
-                color: #8e00b9;
-            
-                animation: hakkimizda-title-animation 1s infinite;
-            }
-            
-            @keyframes hakkimizda-title-animation {
-                0%{text-shadow: 0 0 .7rem #b906d159;}
-            }
-            
-            .hakkimizda-text-box{
-                background: #55066d1e;
-                border: solid .2rem #8e00b9;
-                width: 80%;
-                height: 45rem;
-                margin-top: 60rem;
-                display: flex;
-                position: absolute;
-            
-                animation: hakkimizda-text-box-animation 1s infinite;
-            }
-            
-            @keyframes hakkimizda-text-box-animation {
-                0%{box-shadow: 0 0 .7rem #b906d1;}
-            }
-            
-            .hakkimizda-text{
-                color: #8e00b9;
-                font-size: 1.5rem;
-                margin: 2rem;
-            
-                animation: hakkimizda-text-animation 1s infinite;
-            }
-            
-            
-            @keyframes hakkimizda-text-animation {
-                0%{text-shadow: 0 0 .7rem #b906d160;}
-            }
-            
-            .soz-con{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                font-size: 3rem;
-            }
-            
-            .soz-title{
-                color: #8e7aff;
-                opacity: 40%;
-            
-                animation: soz-animation 1s  infinite;
-            }
-            
-            @keyframes soz-animation {
-                0%{opacity: 45%;}
-                50%{opacity: 65;}
-                75%{opacity: 75%;}
-                100%{opacity: 100%;}
-            }
-            
-            .soz-author{
-                font-size: 2rem;
-                float: right;
-                color: #8e7aff;
-                opacity: 20%;
-            
-                animation: soz-author 1s  infinite;
-            }
-            
-            
-            /* ! hakkımızda container END */
-            
-            
-            
-            /* ? uygulamalar-container START */
-            
-            .uygulamalar-container{
-                width: 100%;
-                height: 325vh;
-                background: #82AAE3;
-                position: relative;
-            }
-            
-            
-            .uygulamalar-title-wrapper{
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                position: relative;
-            }
-            
-            
-            .uygulamalar-title{
-                font-size: 5rem;
-                color: #d3e3fa;
-                font-weight: bold;
-                position: absolute;
-                top: 7rem;
-                text-shadow: .1rem 0 .2rem .5rem black;
-            }
-            
-            .uygulamalar-hr{
-                width: 20%;
-                position: absolute;
-                top: 15rem;
-                opacity: 60%;
-                animation: ease all;
-            
-                
-            }
-            
-            .uygulamalar-text{
-                font-size: 1.5rem;
-                color: #d3e3fac4;
-                font-weight: bold;
-                position: absolute;
-                top: 17rem;
-                text-shadow: .1rem 0 .2rem .5rem black;
-            }
-            
-            
-            
-            
-            
-            .apps-con{
-                width: 100%;
-                height: 100vh;
-                position: absolute;
-                top: 60rem;
-            
-                display: grid;
-                grid-template-columns: 25% 25% 25%;
-                grid-template-rows: repeat(30%, 39);
-                grid-row-gap: 5rem;
-                grid-column-gap: 10rem;
-            
-                justify-content: center;
-            }
-            
-            
-            .app-box{
-                background: #11031d;
-                height: 6rem;
-                border-radius: .5rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-            }
-            
-            .fa-circle-down{
-                color: #ffffff;
-                opacity: 80%;
-                font-size: 2rem;
-                position: absolute;
-                right: 2%;
-            }
-            
-            .i-a{
-                width: auto;
-                height: 2rem;
-                transition: 1s ease all;
-            }
-            
-            .i-a:hover{
-                opacity: 55%;
-                color: #b6b2ff;
-            }
-            
-            .app-image-wrapper{
-                position: absolute;
-                border-radius:.5rem;
-                background: #11031d;
-                width: 7rem;
-                height: 6rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: .2rem;
-            }
-            
-            .app-image-wrapper img{
-                width: 100%;
-                height: 6rem;
-                background-size: cover;
-                object-fit: cover;
-                border-radius: .5rem;
-            }
-            
-            .app-title{
-                color: #ffffffcb;
-                font-size: 2rem;
-                position: absolute;
-                left: 9rem;
-            }
-            
-            
-            .app-text{
-                color: #918bf3;
-                width: 45%;
-                position: absolute;
-                left: 22rem;
-                font-size: 1.2rem;
-                display: flex;
-                justify-content: center;
-                font-size: 2rem;
-            }
-            
-            /* ! uygulamalar-container END */
-            
-            #sidebar {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: rgb(255, 255, 255);
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-                box-shadow: 0 0 1rem white;
-              }
-              
-              #sidebar a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #525252;
-                display: block;
-                transition: .5s ease all;
-              }
-              
-              #sidebar a:hover {
-                opacity: 60%;
-                transform: scale(1.1);
-              }
-              
-              #sidebar .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-              }
-              
-              @media screen and (max-height: 450px) {
-                #sidebar {padding-top: 15px;}
-                #sidebar a {font-size: 18px;}
-              }
-              
-            
-            /* ? footer START */
-            
-            .footer-svg{
-                position: absolute;
-                bottom: 0;
-            }
-            
-            footer{
-                position: absolute;
-                bottom: 5rem;
-                width: 100%;
-                height: 5rem;
-                z-index: 3;
-            
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .footer-text{
-                position: absolute;
-                color: #ffffffa9;
-                font-size: 2.7rem;
-                font-weight: bold;
-            }
-            
-            /* ! footer END */
-            
-            #btn-on{
-                display: none;
-            }
-            
-            
-            
-            /* ? responsive TABLET START*/
-            
-            @media screen and (max-width: 991px) {
-                .social-media-con{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                .ana-sayfa-contact1{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                
-            
-                .soz-title{
-                    font-size: 2.5rem;
-                }
-            
-                .soz-author{
-                    font-size: 1.5rem;
-                }
-            
-                .apps-con{
-                    width: 100%;
-                    height: 100vh;
-                    position: absolute;
-                    top: 60rem;
-                
-                    display: grid;
-                    grid-template-columns: 38% 38%;
-                    grid-template-rows: repeat(30%, 39);
-                    grid-row-gap: 5rem;
-                    grid-column-gap: 9.5rem;
-                
-                    justify-content: center;
-                }
-            
-                .uygulamalar-container{
-                    width: 100%;
-                    height: 437vh;
-                    background: #82AAE3;
-                    position: relative;
-                }
-            
-                .social-media-box{
-                    margin: 1rem;
-                    height: 30rem;
-                }
-            
-                
-            
-                footer{
-                    position: absolute;
-                    bottom: 2rem;
-                    width: 100%;
-                    height: 5rem;
-                    z-index: 3;
-                
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .footer-text{
-                    position: absolute;
-                    color: #ffffffa9;
-                    font-size: 2.7rem;
-                    font-weight: bold;
-                }
-            
-                .logo{
-                    font-size: 2.2rem;
-                }
-            
-                .header-ul{
-                    display: none;
-                }
-            
-                #btn-on{
-                    outline: none;
-                    border: none;
-                    background: transparent;
-                    position: absolute;
-                    right: 3rem;
-                    font-size: 2.5rem;
-                    color: #880499;
-                    cursor: pointer;
-                    transition: 1s ease all;
-                    display: flex;
-                }
-            
-                #btn-on:hover{
-                    transform: scale(.8);
-                    opacity: 60%;
-                }
-            
-                #btn-of{
-                    outline: none;
-                    border: none;
-                    background: transparent;
-                    position: absolute;
-                    right: 3rem;
-                    font-size: 2.5rem;
-                    color: #161616;
-                    display: none;
-                    top: 1rem;
-                    cursor: pointer;
-                    transition: 1s ease all;
-                }
-            
-                #btn-of:hover{
-                    transform: scale(.8);
-                    opacity: 60%;
-                }
-            
-                
-                
-            }
-            
-            /* ! responsive TABLET END */
-            
-            
-            
-            
-            
-            
-            
-            /* ? resposive PHONE START */
-            
-            @media screen and (max-width:767px) {
-                .social-media-con{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                .ana-sayfa-contact1{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                .uygulamalar-hr{
-                    width: 30%;
-                }
-            
-                .soz-title{
-                    font-size: 2rem;
-                }
-            
-                .soz-author{
-                    font-size: 1.1rem;
-                }
-            
-                .apps-con{
-                    width: 100%;
-                    height: 100vh;
-                    position: absolute;
-                    top: 60rem;
-                
-                    display: grid;
-                    grid-template-columns: 76%;
-                    grid-template-rows: repeat(30%, 39);
-                    grid-row-gap: 5rem;
-                    grid-column-gap: 9.5rem;
-                
-                    justify-content: center;
-                }
-            
-                .uygulamalar-container{
-                    width: 100%;
-                    height: 673vh;
-                    background: #82AAE3;
-                    position: relative;
-                }
-            
-                .social-media-box{
-                    margin: 1rem;
-                    height: 30rem;
-                }
-            
-                .social-media-box-text{ 
-                    font-size: 2rem;
-                }
-            
-                .instagram-ico, .youtube-ico{
-                    font-size: 12rem;
-                }
-            
-                .social-media-con{ 
-            
-                    grid-gap: 5%;
-            
-                }
-            
-                
-            
-                footer{
-                    position: absolute;
-                    bottom: .8rem;
-                    width: 100%;
-                    height: 5rem;
-                    z-index: 3;
-                
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .footer-text{
-                    position: absolute;
-                    color: #ffffffa9;
-                    font-size: 2.2rem;
-                    font-weight: bold;
-                }
-            
-                .logo{
-                    font-size: 2.2rem;
-                }
-            
-                .header-ul{
-                    display: none;
-                }
-            
-                #btn-on{
-                    outline: none;
-                    border: none;
-                    background: transparent;
-                    position: absolute;
-                    right: 3rem;
-                    font-size: 2.5rem;
-                    color: #880499;
-                    cursor: pointer;
-                    transition: 1s ease all;
-                    display: flex;
-                }
-            
-                #btn-on:hover{
-                    transform: scale(.8);
-                    opacity: 60%;
-                }
-            
-                #btn-of{
-                    outline: none;
-                    border: none;
-                    background: transparent;
-                    position: absolute;
-                    right: 3rem;
-                    font-size: 2.5rem;
-                    color: #161616;
-                    display: none;
-                    top: 1rem;
-                    cursor: pointer;
-                    transition: 1s ease all;
-                }
-            
-                #btn-of:hover{
-                    transform: scale(.8);
-                    opacity: 60%;
-                }
-            
-                .social-media-box-btn{
-                    font-size: 1.5rem;
-                }
-                
-            
-                
-                
-            }
-            
-            /* ! responsive PHONE END */
-            
-            
-            
-            
-            
-            
-            
-            /* ? resposive PHONE2 START */
-            
-            
-            @media screen and (max-width:550px) {
-                .social-media-con{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                .ana-sayfa-contact1{
-                    display: flex;
-                    justify-content: center;
-                }
-            
-                .uygulamalar-hr{
-                    width: 50%;
-                }
-            
-                .soz-title{
-                    font-size: 1.5rem;
-                }
-            
-                .soz-author{
-                    font-size: 1.1rem;
-                }
-            
-                .apps-con{
-                    width: 100%;
-                    height: 100vh;
-                    position: absolute;
-                    top: 60rem;
-                
-                    display: grid;
-                    grid-template-columns: 76%;
-                    grid-template-rows: repeat(30%, 39);
-                    grid-row-gap: 5rem;
-                    grid-column-gap: 9.5rem;
-                
-                    justify-content: center;
-                }
-            
-                .uygulamalar-container{
-                    width: 100%;
-                    height: 673vh;
-                    background: #82AAE3;
-                    position: relative;
-                }
-            
-                .social-media-box{
-                    margin: 1rem;
-                    height: 25rem;
-                    width: 45%;
-                }
-            
-                .social-media-box-text{ /*""*/
-                    font-size: 1.5rem;
-                    top: 4rem;
-                }
-            
-                .instagram-ico, .youtube-ico{
-                    font-size: 11rem;
-                    position: relative;
-                    margin: 6rem;
-                }
-            
-                .social-media-con{ 
-            
-                    grid-gap: 3%;
-            
-                }
-            
-            
-                
-            
-                footer{
-                    position: absolute;
-                    bottom: 0rem;
-               
-            
-                }
-            
-                .uygulamalar-title{
-                    font-size: 3.5rem;
-                }
-            
-                .uygulamalar-text{
-                    font-size: 1.2rem;
-                }
-            }
-            /* ! resposive PHONE2 END */
-            
-            @media screen and (max-width:455px) {
-                .soz-title{
-                    font-size: 1.4rem;
-                }
-            }
-            
-            </style>
+}
+
+.logo{
+    font-size: 2.3rem;
+    color: #8e00b9;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+
+.ana-sayfa-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.ana-sayfa-contact1{
+    background: url(images/bacgkround.jpg) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.header-ul{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    gap: 7rem;
+    right: 5rem;
+}
+
+
+
+.header-ul a{
+    font-size: 1.5rem;
+    color: rgb(197, 72, 255);
+    transition: .7s ease all;
+    display: flex;
+    gap: 7rem;
+    font-weight: bold;
+    
+}
+
+.header-ul a::selection{
+    background: #d50ff0;
+    color: white;
+}
+
+.header-ul li{
+    margin: 0rem;
+}
+
+
+.header-ul a:hover{
+    border-bottom: solid .1rem rgb(197, 72, 255);
+    width:max-content;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    background: black;
+    box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.12), 0 22.3px 17.9px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* ! header END */
+
+
+
+
+
+/* ? anasayfa contact2 START */
+
+.social-media-con{   /*é*/
+    margin-top: 6rem;
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    grid-gap: 10%;
+    justify-content: center;
+}
+
+
+.social-media-con-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* ? social-media-con START */
+.social-media-box{
+    background: rgba(255, 255, 255, 0.87);
+    width: 40rem;
+    height: 40rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 1s ease all;
+
+    animation: s-media-box-animation 1s infinite;
+}
+
+@keyframes s-media-box-animation {
+    0%{box-shadow:0 0 .5rem white;}
+    100%{box-shadow:0 0 .5rem #adacac;}
+}
+
+.social-media-box:hover{
+    background: rgba(255, 255, 255, 0.596);
+    box-shadow: 0 .2rem .5rem gray;
+}
+
+.social-media-box-text{ 
+    font-size: 2.5rem;
+    position: absolute;
+    top: 19rem;
+    color: #555555;
+}
+
+.social-media-box-text::selection{
+    background: #880499;
+    color: white;
+}
+
+.social-media-box-btn-con{
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-box-btn{
+    width: 40%;
+    height: 4rem;
+    position: absolute; 
+    bottom: 0;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    transition: 1s ease all;
+}
+
+
+#instagram-btn{
+    background: #d50ff0;
+    color: whitesmoke;
+}
+
+#instagram-btn::selection{
+    background: #b906d1;
+    color: white;
+}
+
+#instagram-btn:hover{
+    background: #880499;
+    color: #ffffffab;
+}
+
+#youtube-btn{
+    background: red;
+    color: whitesmoke;
+}
+
+#youtube-btn:hover{
+    background: #aa0000;
+    color: #ffffffab;
+}
+
+#youtube-btn::selection{
+    background: rgb(252, 50, 50);
+    color: white;
+}
+
+.instagram-ico{
+    font-size: 14rem;
+    margin-top: 2rem;
+    color: #d50ff0;
+}
+
+.youtube-ico{
+    font-size: 14rem;
+    margin-top: 2rem;
+    color: #ff0000;
+}
+
+/* ? social-media-con END */
+
+/* ! anasayfa contact2 END */
+
+
+
+/* ? hakkımızda container START */
+
+.hakkimizda-con{
+    width: 100%;
+    height: 150vh;
+    background: #02002E;
+    position: relative;
+}
+
+.hakkimizda-contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hakkimizda-box{
+    background: #55066d1e;
+    border: solid .2rem #8e00b9;
+    width: 80%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: hakkimizda-box-animation 1s infinite;
+}
+
+@keyframes hakkimizda-box-animation {
+    0%{box-shadow: 0 0 .7rem #b906d1;}
+}
+
+.hakkimizda-title{
+    font-size: 3rem;
+    color: #8e00b9;
+
+    animation: hakkimizda-title-animation 1s infinite;
+}
+
+@keyframes hakkimizda-title-animation {
+    0%{text-shadow: 0 0 .7rem #b906d159;}
+}
+
+.hakkimizda-text-box{
+    background: #55066d1e;
+    border: solid .2rem #8e00b9;
+    width: 80%;
+    height: 45rem;
+    margin-top: 60rem;
+    display: flex;
+    position: absolute;
+
+    animation: hakkimizda-text-box-animation 1s infinite;
+}
+
+@keyframes hakkimizda-text-box-animation {
+    0%{box-shadow: 0 0 .7rem #b906d1;}
+}
+
+.hakkimizda-text{
+    color: #8e00b9;
+    font-size: 1.5rem;
+    margin: 2rem;
+
+    animation: hakkimizda-text-animation 1s infinite;
+}
+
+
+@keyframes hakkimizda-text-animation {
+    0%{text-shadow: 0 0 .7rem #b906d160;}
+}
+
+.soz-con{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.soz-title{
+    color: #8e7aff;
+    opacity: 40%;
+
+    animation: soz-animation 1s  infinite;
+}
+
+@keyframes soz-animation {
+    0%{opacity: 45%;}
+    50%{opacity: 65;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+
+.soz-author{
+    font-size: 2rem;
+    float: right;
+    color: #8e7aff;
+    opacity: 20%;
+
+    animation: soz-author 1s  infinite;
+}
+
+
+/* ! hakkımızda container END */
+
+
+
+/* ? uygulamalar-container START */
+
+.uygulamalar-container{
+    width: 100%;
+    height: 325vh;
+    background: #82AAE3;
+    position: relative;
+}
+
+
+.uygulamalar-title-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.uygulamalar-title{
+    font-size: 5rem;
+    color: #d3e3fa;
+    font-weight: bold;
+    position: absolute;
+    top: 7rem;
+    text-shadow: .1rem 0 .2rem .5rem black;
+}
+
+.uygulamalar-hr{
+    width: 20%;
+    position: absolute;
+    top: 15rem;
+    opacity: 60%;
+    animation: ease all;
+
+    
+}
+
+.uygulamalar-text{
+    font-size: 1.5rem;
+    color: #d3e3fac4;
+    font-weight: bold;
+    position: absolute;
+    top: 17rem;
+    text-shadow: .1rem 0 .2rem .5rem black;
+}
+
+
+
+
+
+.apps-con{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60rem;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: repeat(30%, 39);
+    grid-row-gap: 5rem;
+    grid-column-gap: 10rem;
+
+    justify-content: center;
+}
+
+
+.app-box{
+    background: #11031d;
+    height: 6rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.fa-circle-down{
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 2rem;
+    position: absolute;
+    right: 2%;
+}
+
+.i-a{
+    width: auto;
+    height: 2rem;
+    transition: 1s ease all;
+}
+
+.i-a:hover{
+    opacity: 55%;
+    color: #b6b2ff;
+}
+
+.app-image-wrapper{
+    position: absolute;
+    border-radius:.5rem;
+    background: #11031d;
+    width: 7rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+}
+
+.app-image-wrapper img{
+    width: 100%;
+    height: 6rem;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.app-title{
+    color: #ffffffcb;
+    font-size: 2rem;
+    position: absolute;
+    left: 9rem;
+}
+
+
+.app-text{
+    color: #918bf3;
+    width: 45%;
+    position: absolute;
+    left: 22rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* ! uygulamalar-container END */
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0 0 1rem white;
+  }
+  
+  #sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #525252;
+    display: block;
+    transition: .5s ease all;
+  }
+  
+  #sidebar a:hover {
+    opacity: 60%;
+    transform: scale(1.1);
+  }
+  
+  #sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    #sidebar {padding-top: 15px;}
+    #sidebar a {font-size: 18px;}
+  }
+  
+
+/* ? footer START */
+
+.footer-svg{
+    position: absolute;
+    bottom: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    height: 5rem;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    position: absolute;
+    color: #ffffffa9;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+/* ! footer END */
+
+#btn-on{
+    display: none;
+}
+
+
+
+/* ? responsive TABLET START*/
+
+@media screen and (max-width: 991px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .soz-title{
+        font-size: 2.5rem;
+    }
+
+    .soz-author{
+        font-size: 1.5rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 38% 38%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 437vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 30rem;
+    }
+
+    
+
+    footer{
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        height: 5rem;
+        z-index: 3;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-text{
+        position: absolute;
+        color: #ffffffa9;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .header-ul{
+        display: none;
+    }
+
+    #btn-on{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #880499;
+        cursor: pointer;
+        transition: 1s ease all;
+        display: flex;
+    }
+
+    #btn-on:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    #btn-of{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #161616;
+        display: none;
+        top: 1rem;
+        cursor: pointer;
+        transition: 1s ease all;
+    }
+
+    #btn-of:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    
+    
+}
+
+/* ! responsive TABLET END */
+
+
+
+
+
+
+
+/* ? resposive PHONE START */
+
+@media screen and (max-width:767px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .uygulamalar-hr{
+        width: 30%;
+    }
+
+    .soz-title{
+        font-size: 2rem;
+    }
+
+    .soz-author{
+        font-size: 1.1rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 76%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 673vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 30rem;
+    }
+
+    .social-media-box-text{ 
+        font-size: 2rem;
+    }
+
+    .instagram-ico, .youtube-ico{
+        font-size: 12rem;
+    }
+
+    .social-media-con{ 
+
+        grid-gap: 5%;
+
+    }
+
+    
+
+    footer{
+        position: absolute;
+        bottom: .8rem;
+        width: 100%;
+        height: 5rem;
+        z-index: 3;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-text{
+        position: absolute;
+        color: #ffffffa9;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .header-ul{
+        display: none;
+    }
+
+    #btn-on{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #880499;
+        cursor: pointer;
+        transition: 1s ease all;
+        display: flex;
+    }
+
+    #btn-on:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    #btn-of{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #161616;
+        display: none;
+        top: 1rem;
+        cursor: pointer;
+        transition: 1s ease all;
+    }
+
+    #btn-of:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    .social-media-box-btn{
+        font-size: 1.5rem;
+    }
+    
+
+    
+    
+}
+
+/* ! responsive PHONE END */
+
+
+
+
+
+
+
+/* ? resposive PHONE2 START */
+
+
+@media screen and (max-width:550px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .uygulamalar-hr{
+        width: 50%;
+    }
+
+    .soz-title{
+        font-size: 1.5rem;
+    }
+
+    .soz-author{
+        font-size: 1.1rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 76%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 673vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 25rem;
+        width: 45%;
+    }
+
+    .social-media-box-text{ /*""*/
+        font-size: 1.5rem;
+        top: 4rem;
+    }
+
+    .instagram-ico, .youtube-ico{
+        font-size: 11rem;
+        position: relative;
+        margin: 6rem;
+    }
+
+    .social-media-con{ 
+
+        grid-gap: 3%;
+
+    }
+
+
+    
+
+    footer{
+        position: absolute;
+        bottom: 0rem;
+   
+
+    }
+
+    .uygulamalar-title{
+        font-size: 3.5rem;
+    }
+
+    .uygulamalar-text{
+        font-size: 1.2rem;
+    }
+}
+/* ! resposive PHONE2 END */
+
+@media screen and (max-width:455px) {
+    .soz-title{
+        font-size: 1.4rem;
+    }
+}
+
+
+    </style>
 </head>
 
 <body>
-    <div class="error">Cihazınız web sitesini açmak için UYGUN DEĞİL!</div>
         <!-- ? ana-sayfa-container START-->
     <!-- ? header START-->
     <div id="ANA SAYFA" class="ana-sayfa-container">
